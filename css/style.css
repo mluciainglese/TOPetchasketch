@@ -16,3 +16,17 @@
   .clear {
       clear: both;
   }
+
+  .gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    justify-content: center;
+  }
+
+  .square {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+  }
