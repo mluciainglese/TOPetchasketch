@@ -5,6 +5,8 @@ let divContainer = document.querySelector(".gridContainer")
 for (i = 0; i < 256; i++){
     let newDiv = document.createElement("div")
     newDiv.classList.add("square")
+    newDiv.style.width = 50
+    newDiv.style.height = 50
     divContainer.appendChild(newDiv)
 }
 
@@ -22,6 +24,7 @@ document.querySelector("button").addEventListener("click", getUserInput)
 
 function getUserInput(){
     let userInput = Number(document.querySelector("input").value)
+    let squareSize = 800 / userInput + "px"
     
     if (isNaN(userInput) || userInput < 1 || userInput > 100 || userInput % 1 != 0){
         alert ("Please enter a number between 1 and 100")
@@ -33,6 +36,8 @@ function getUserInput(){
             for (let i = 0; i < userInput*userInput; i++) {
                 let newDiv = document.createElement("div")
                 newDiv.classList.add("square")
+                newDiv.style.width = squareSize
+                newDiv.style.height = squareSize
                 divContainer.appendChild(newDiv)
             }       
         }
