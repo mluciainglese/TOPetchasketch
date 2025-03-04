@@ -7,3 +7,11 @@ for (i = 0; i < 256; i++){
     newDiv.classList.add("square")
     divContainer.appendChild(newDiv)
 }
+
+// Creating hover functionality
+
+divContainer.addEventListener("mouseover", (event) => {
+    if (event.target.classList.contains("square")){
+        event.target.style.backgroundColor = "rgb(186, 121, 255)"
+    }
+})
