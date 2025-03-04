@@ -32,15 +32,36 @@
   }
 
   .input-field {
-    font-family: sans-serif;
+    font-family: "Koulen", sans-serif;
+    color:rgb(172, 95, 255);
+    -webkit-text-stroke: 0.5px black;
+    font-size: 1.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
-    height: 30px;
+    height: 35px;
   }
 
+  p {
+    margin-right: 20px;
+  }
 
+  button {
+    background-color: rgb(172, 95, 255);
+    font-weight: bold;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    -webkit-text-stroke: 0px;
+    padding: 10px;
+  }
+
+  input {
+    padding: 10px;
+    border: none;
+    background-color: rgba(205, 145, 255, 0.624);
+  }
 
   .gridContainer {
     display: flex;
@@ -51,5 +72,5 @@
   }
 
   .square {
-    border: 0.5px solid rgb(111, 111, 111);
+    border: 0.5px solid rgb(138, 138, 138);
   }
