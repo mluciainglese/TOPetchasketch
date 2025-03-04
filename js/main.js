@@ -14,7 +14,12 @@ for (i = 0; i < 256; i++){
 
 divContainer.addEventListener("mouseover", (event) => {
     if (event.target.classList.contains("square")){
-        event.target.style.backgroundColor = "rgb(186, 121, 255)"
+        event.target.style.backgroundColor = "rgb(172, 95, 255)"
+
+        let currentOpacity = parseFloat(event.target.style.opacity) || 0
+        if (currentOpacity < 1){
+            event.target.style.opacity = currentOpacity + 0.1
+        }
     }
 })
 
