@@ -27,6 +27,12 @@ divContainer.addEventListener("mouseover", (event) => {
 
 document.querySelector("button").addEventListener("click", getUserInput)
 
+document.querySelector("input").addEventListener("keydown", (event) =>{
+    if (event.key === "Enter"){
+        getUserInput()
+    }
+})
+
 function getUserInput(){
     let userInput = Number(document.querySelector("input").value)
     let squareSize = 800 / userInput + "px"
